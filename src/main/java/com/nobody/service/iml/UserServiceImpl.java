@@ -1,7 +1,6 @@
 package com.nobody.service.iml;
 
 import com.nobody.dao.UserDao;
-import com.nobody.pojo.entity.UserEntity;
 import com.nobody.service.UserService;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
@@ -49,8 +48,6 @@ public class UserServiceImpl implements UserService, InitializingBean, Disposabl
 
     @Override
     public void test() {
-        UserEntity userEntity = new UserEntity(1, "Mr.nobody", 18);
-        System.out.println(userEntity);
     }
 
 }

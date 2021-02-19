@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Scope;
 public class UserServiceImplConfig {
 
     @Bean(initMethod = "initMethod", destroyMethod = "destroyMethod")
-    @Scope("prototype")
+    // @Scope("prototype")
     public UserServiceImpl userServiceImpl() {
         return new UserServiceImpl();
     }
